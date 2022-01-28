@@ -227,14 +227,7 @@ footer nav a{
 }
 
 /*About Page Styles*/
-header{
-    display: flex;
-    /*Spacing out the nav elements*/
-    justify-content:left;
-    align-items:center;
-    height: 5vh;
-    flex-direction: row
-}
+
 .containerAboutPage{
     width: 80%;
     margin: 0 auto;
@@ -263,11 +256,7 @@ header{
 .middleContainer p{
     margin-bottom: 4%;
 }
-.middleContainer h1{
-    display: flex;
-    width: 100%;
-    text-align: left;
-}
+
 .middleContainer .border{
     width:100%;
     border-bottom: 2px solid #ff4b00;
@@ -281,17 +270,21 @@ header{
 /*Responsive Styles*/
 @media (max-width: 500px) {
     .container {
-        width: 95%;
-    }
-    text-container{
-        
+        width: 90%;
     }
     h1,h2,h3{
-        margin-bottom: 10%;
+        margin-top:5%;
+        margin-bottom: 5%;
+        text-align: center;
+    }
+    p{
+        text-align: left;
     }
     header{
-        margin-top:10%;
-        margin-bottom: 15%;
+        margin-bottom: 5%;
+    }
+    section{
+        margin-bottom: 10%;
     }
     nav{
         flex-direction: column;
@@ -348,5 +341,36 @@ header{
     footer nav{
         margin-top: 0%;
         justify-content: space-around;
+    }
+    /*About Page Styles 800px*/
+    .containerAboutPage{
+        width:90%;
+    }
+    .top-content .topText{
+        width:80%;
+        margin-bottom: 10%;
+    }
+    .top-content .topText h1{
+        text-align: center;
+    }
+    .middleContent{
+        
+    }
+    .middleContent .row{
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+    .middleContent .row .middleContainer{
+        width: 100%;
+        margin-bottom: 10%;
+    }
+    .middleContent .row .middleContainer h1{
+        text-align: center;
+    }
+    .middleContent .bottomContainer{
+        width:100%;
+        align-items: center;
+        justify-content: center;
     }
 }
