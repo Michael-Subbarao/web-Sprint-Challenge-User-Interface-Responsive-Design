@@ -90,26 +90,27 @@ header{
 .logo {
     display: flex;
     width: 15%;
+    margin-right:10%;
   }
 .logo img{
     width: 100%;
 }
 nav{
     display: flex;
-    width: 100%;
-    justify-content: space-around left;
+    justify-content: space-around;
 }
+
 .links{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;  
-    width:70%;
+    width:100%;
 }
 .top-content {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    border-bottom: 4px solid #ff4b00;
+    border-bottom: 8px solid #ff4b00;
     text-align: justify;
     flex-direction:column;
     align-items: center;
@@ -142,7 +143,7 @@ nav{
 /*Middle Section Styles*/
 .middle-content {
     margin-bottom: 0%;
-    border-bottom: 4px solid #ff4b00;
+    border-bottom: 8px solid #ff4b00;
 }
 
 .middle-content h2 {
@@ -154,11 +155,10 @@ nav{
     flex-wrap: wrap;
     justify-content:space-between;
     flex-direction:column;
-    width: 100%;
 }
 .middle-content .row div{
-    width: 10vh;
-    height:10vh;
+    width: 15vh;
+    height:15vh;
     text-align: center;
     padding: 4%;
 }
@@ -172,7 +172,7 @@ nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    font-size:1.6vh;
+    font-size:1.8vh;
 }
 
 /*Bottom Section Styles*/
@@ -224,8 +224,55 @@ footer {
     width: 100%;
     background-color: #ff4b00;
 }
+footer nav{
+    display: flex;
+    justify-content: space-around;
+}
+footer nav a{
+    color: white;
+}
 
 /*About Page Styles*/
+header{
+    display: flex;
+    /*Spacing out the nav elements*/
+    justify-content:left;
+    align-items:center;
+    height: 5vh;
+    flex-direction: row
+}
+.logo {
+    display: flex;
+    width: 15%;
+    margin-right:10%;
+  }
+.logo img{
+    width: 100%;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+}
 
-
+.links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;  
+    width:100%;
+}
+.containerAboutPage{
+    width: 80%;
+    margin: 0 auto;
+}
+footer {
+    width: 100%;
+    background-color: #ff4b00;
+}
+footer nav{
+    display: flex;
+    justify-content: space-around;
+}
+footer nav a{
+    color: white;
+}
 /*Responsive Styles*/
