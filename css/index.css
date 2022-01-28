@@ -18,7 +18,7 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
 	padding: 0;
-	/*border: 0;*/
+	border: 0;
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
@@ -316,7 +316,6 @@ footer nav a{
         text-align: center;
     }
     .boxes{
-        text-align: center;
         flex-direction: row;
         flex-wrap: wrap;
     }
@@ -353,9 +352,6 @@ footer nav a{
     .top-content .topText h1{
         text-align: center;
     }
-    .middleContent{
-        
-    }
     .middleContent .row{
         flex-direction: column;
         width: 100%;
@@ -372,5 +368,14 @@ footer nav a{
         width:100%;
         align-items: center;
         justify-content: center;
+    }
+}
+/* @media(max-width:800){} <--looks ok at this size without query*/
+@media (min-width: 2000px){/* For readability at higher resolutions*/
+    h1,h2,h3{
+        font-size:3vh;
+    }
+    a,p{
+        font-size:2vh;
     }
 }
