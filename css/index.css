@@ -58,11 +58,11 @@ html{
 body {
     font-family: 'Roboto', sans-serif;
     line-height:1.5;
-    font-size:1.2vh;
+    font-size:2rem;
 }
 
 h1, h2, h3, h4, h5 {
-    font-size: 1.8vh;
+    font-size: 3rem;
     margin-bottom: 2%;
     font-family: 'Rubik', sans-serif;
 }
@@ -76,7 +76,7 @@ section, footer{
 a{
     text-decoration: none;
     color: black;
-    font-size:1.3vh;
+    font-size:2rem;
 }
 /*Top Section Styles*/
 header{
@@ -84,7 +84,8 @@ header{
     /*Spacing out the nav elements*/
     justify-content:left;
     align-items:center;
-    flex-direction: row
+    flex-direction: row;
+    margin-top: 2%;
 }
 
   .logo {
@@ -110,7 +111,7 @@ nav{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    border-bottom: 4px solid #ff4b00;
+    border-bottom: 2px solid #ff4b00;
     text-align: justify;
     flex-direction:column;
     align-items: center;
@@ -143,7 +144,7 @@ nav{
 /*Middle Section Styles*/
 .middle-content {
     margin-bottom: 0%;
-    border-bottom: 4px solid #ff4b00;
+    border-bottom: 2px solid #ff4b00;
 }
 
 .middle-content h2 {
@@ -278,7 +279,12 @@ header{
 }
 .middleContainer .border{
     width:100%;
-    border-bottom: 4px solid #ff4b00;
+    border-bottom: 2px solid #ff4b00;
 }
-
+.bottomContainer{
+    display: flex;
+    flex-direction:column;
+    align-items:top;
+    margin-top: 0%;
+}
 /*Responsive Styles*/
