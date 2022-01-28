@@ -84,12 +84,12 @@ header{
     /*Spacing out the nav elements*/
     justify-content:left;
     align-items:center;
-    height: 5vh;
     flex-direction: row
 }
-.logo {
+
+  .logo {
     display: flex;
-    width: 15%;
+    width: 25%;
     margin-right:10%;
   }
 .logo img{
@@ -110,7 +110,7 @@ nav{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    border-bottom: 8px solid #ff4b00;
+    border-bottom: 4px solid #ff4b00;
     text-align: justify;
     flex-direction:column;
     align-items: center;
@@ -143,7 +143,7 @@ nav{
 /*Middle Section Styles*/
 .middle-content {
     margin-bottom: 0%;
-    border-bottom: 8px solid #ff4b00;
+    border-bottom: 4px solid #ff4b00;
 }
 
 .middle-content h2 {
@@ -241,38 +241,12 @@ header{
     height: 5vh;
     flex-direction: row
 }
-.logo {
-    display: flex;
-    width: 15%;
-    margin-right:10%;
-  }
-.logo img{
-    width: 100%;
-}
-nav{
-    display: flex;
-    justify-content: space-around;
-}
 
-.links{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;  
-    width:100%;
-}
 .containerAboutPage{
     width: 80%;
     margin: 0 auto;
 }
-footer {
-    width: 100%;
-    background-color: #ff4b00;
-}
-footer nav{
-    display: flex;
-    justify-content: space-around;
-}
-footer nav a{
-    color: white;
+.topText{
+    margin-top: 4%;
 }
 /*Responsive Styles*/
