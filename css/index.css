@@ -49,7 +49,7 @@ table {
 
 * {
     box-sizing: border-box;
-    border:1px solid red;
+    /*border:1px solid red;*/
 }
 
 html{
@@ -58,11 +58,11 @@ html{
 body {
     font-family: 'Roboto', sans-serif;
     line-height:1.5;
-    font-size:1.6rem;
+    font-size:1.2vh;
 }
 
 h1, h2, h3, h4, h5 {
-    font-size: 2.5rem;
+    font-size: 1.8vh;
     margin-bottom: 2%;
     font-family: 'Rubik', sans-serif;
 }
@@ -76,7 +76,7 @@ section, footer{
 a{
     text-decoration: none;
     color: black;
-    font-size:2rem;
+    font-size:1.3vh;
 }
 /*Top Section Styles*/
 header{
@@ -110,15 +110,35 @@ nav{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-bottom: 4%;
+
     border-bottom: 2px solid #ff4b00;
     text-align: justify;
+    flex-direction:column;
+    align-items: center;
 }
-
+.topImg{
+    width: 100%;
+}
+.topImg img{
+    display: flex;
+    width: 100%;
+}
+.mainTextContain{
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-around;
+    margin-top:4%; 
+}
+.text-container{
+    display: flex;
+    flex-direction: column; 
+}
+.mainTextContain .text-container h2{
+    text-align:center;
+}
 .top-content .text-container {
-    width: 35%;
-    padding: 0 1%;
-    padding-bottom: 4%;  
+    width: 50%;
+    padding: 0 1%; 
 }
 
 /*Middle Section Styles*/
