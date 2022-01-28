@@ -98,7 +98,6 @@ nav{
     display: flex;
     width: 100%;
     justify-content: space-around left;
-    position: fixed;
 }
 .links{
     display: flex;
@@ -110,8 +109,7 @@ nav{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-
-    border-bottom: 2px solid #ff4b00;
+    border-bottom: 4px solid #ff4b00;
     text-align: justify;
     flex-direction:column;
     align-items: center;
@@ -143,7 +141,8 @@ nav{
 
 /*Middle Section Styles*/
 .middle-content {
-    margin-bottom: 4%;
+    margin-bottom: 0%;
+    border-bottom: 4px solid #ff4b00;
 }
 
 .middle-content h2 {
@@ -153,16 +152,27 @@ nav{
 .middle-content .boxes {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content:space-between;
+    flex-direction:column;
+    width: 100%;
 }
-
-.middle-content .boxes .box {
-    background: black;
-    margin: 4% 0;
+.middle-content .row div{
+    width: 10vh;
+    height:10vh;
+    text-align: center;
+    padding: 4%;
+}
+.middle-content .row{
+    display: flex;
+    flex-direction: row;
+}
+.middle-content .boxes div{
+    margin: 2% 0;
     color: white;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    font-size:1.6vh;
 }
 
 /*Bottom Section Styles*/
@@ -177,6 +187,36 @@ nav{
 
 .bottom-content .text-container:last-child {
     padding-right: 0;
+}
+.boxTeal{
+    background:teal;
+}
+.boxGold{
+    background:gold;
+}
+.boxCadetblue{
+    background:cadetblue;
+}
+.boxCoral{
+    background:Coral;
+}
+.boxCrimson{
+    background:Crimson;
+}
+.boxForestgreen{
+    background:Forestgreen;
+}
+.boxDarkorchid{
+    background:Darkorchid;
+}
+.boxHotpink{
+    background:Hotpink;
+}
+.boxIndigo{
+    background:Indigo;
+}
+.boxDodgerblue{
+    background:Dodgerblue;
 }
 
 /*Footer Styles*/
