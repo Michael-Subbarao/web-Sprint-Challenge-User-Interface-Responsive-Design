@@ -241,7 +241,6 @@ header{
     height: 5vh;
     flex-direction: row
 }
-
 .containerAboutPage{
     width: 80%;
     margin: 0 auto;
@@ -249,4 +248,37 @@ header{
 .topText{
     margin-top: 4%;
 }
+.middle-content{
+    display:flex;
+    flex-direction: column;
+}
+.row{
+    display:flex;
+    justify-content: space-between;
+}
+.middleContainer{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    width: 45%;
+    margin-bottom: 4%;
+    
+}
+.middleContainer img{
+    width: 100%;
+    margin-bottom: 4%;
+}
+.middleContainer p{
+    margin-bottom: 4%;
+}
+.middleContainer h1{
+    display: flex;
+    width: 100%;
+    text-align: left;
+}
+.middleContainer .border{
+    width:100%;
+    border-bottom: 4px solid #ff4b00;
+}
+
 /*Responsive Styles*/
