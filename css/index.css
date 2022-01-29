@@ -49,6 +49,7 @@ table {
 
 * {
     box-sizing: border-box;
+    /*border:1px solid red;*/
 }
 
 html{
@@ -57,11 +58,11 @@ html{
 body {
     font-family: 'Roboto', sans-serif;
     line-height:1.5;
-    font-size:1.6rem;
+    font-size:2rem;
 }
 
 h1, h2, h3, h4, h5 {
-    font-size: 2.5rem;
+    font-size: 3rem;
     margin-bottom: 2%;
     font-family: 'Rubik', sans-serif;
 }
@@ -72,27 +73,78 @@ section, footer{
     width: 80%;
     margin: 0 auto;
 }
-
+a{
+    text-decoration: none;
+    color: black;
+    font-size:2rem;
+}
 /*Top Section Styles*/
+header{
+    display: flex;
+    /*Spacing out the nav elements*/
+    justify-content:left;
+    align-items:center;
+    flex-direction: row;
+    margin-top: 2%;
+}
 
+  .logo {
+    display: flex;
+    width: 25%;
+    margin-right:10%;
+  }
+.logo img{
+    width: 100%;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+}
+
+.links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;  
+    width:100%;
+}
 .top-content {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-bottom: 4%;
     border-bottom: 2px solid #ff4b00;
     text-align: justify;
+    flex-direction:column;
+    align-items: center;
 }
-
+.topImg{
+    width: 100%;
+}
+.topImg img{
+    display: flex;
+    width: 100%;
+}
+.mainTextContain{
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-around;
+    margin-top:4%; 
+}
+.text-container{
+    display: flex;
+    flex-direction: column; 
+}
+.mainTextContain .text-container h2{
+    text-align:center;
+}
 .top-content .text-container {
-    width: 35%;
-    padding: 0 1%;
-    padding-bottom: 4%;  
+    width: 50%;
+    padding: 0 1%; 
 }
 
 /*Middle Section Styles*/
 .middle-content {
-    margin-bottom: 4%;
+    margin-bottom: 0%;
+    border-bottom: 2px solid #ff4b00;
 }
 
 .middle-content h2 {
@@ -102,16 +154,20 @@ section, footer{
 .middle-content .boxes {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content:space-between;
+    flex-direction:row;
 }
-
-.middle-content .boxes .box {
-    background: black;
-    margin: 4% 0;
-    color: white;
+.middle-content .boxes div{
+    flex: 1 0 14%;/* 14 = 20 - margin*3*/
+    margin: 2%;
+    height: 17vh;
+    width: 17vh;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+}
+.boxes div p{
+    color: white;
 }
 
 /*Bottom Section Styles*/
@@ -123,9 +179,38 @@ section, footer{
 .bottom-content .text-container {
     width:25%;
 }
-
 .bottom-content .text-container:last-child {
     padding-right: 0;
+}
+.boxTeal{
+    background:teal;
+}
+.boxGold{
+    background:gold;
+}
+.boxCadetblue{
+    background:cadetblue;
+}
+.boxCoral{
+    background:Coral;
+}
+.boxCrimson{
+    background:Crimson;
+}
+.boxForestgreen{
+    background:Forestgreen;
+}
+.boxDarkorchid{
+    background:Darkorchid;
+}
+.boxHotpink{
+    background:Hotpink;
+}
+.boxIndigo{
+    background:Indigo;
+}
+.boxDodgerblue{
+    background:Dodgerblue;
 }
 
 /*Footer Styles*/
@@ -133,8 +218,164 @@ footer {
     width: 100%;
     background-color: #ff4b00;
 }
+footer nav{
+    display: flex;
+    justify-content: space-around;
+}
+footer nav a{
+    color: white;
+}
 
 /*About Page Styles*/
 
+.containerAboutPage{
+    width: 80%;
+    margin: 0 auto;
+}
+.topText{
+    margin-top: 4%;
+}
+.middle-content{
+    display:flex;
+    flex-direction: column;
+}
+.row{
+    display:flex;
+    justify-content: space-between;
+}
+.middleContainer{
+    display:flex;
+    flex-direction: column;
+    width: 45%;
+    margin-bottom: 4%;
+}
+.middleContainer img{
+    width: 100%;
+    margin-bottom: 4%;
+}
+.middleContainer p{
+    margin-bottom: 4%;
+}
 
+.middleContainer .border{
+    width:100%;
+    border-bottom: 2px solid #ff4b00;
+}
+.bottomContainer{
+    display: flex;
+    flex-direction:column;
+    align-items:top;
+    margin-top: 0%;
+}
 /*Responsive Styles*/
+@media (max-width: 500px) {
+    .container {
+        width: 90%;
+    }
+    h1,h2,h3{
+        margin-top:5%;
+        margin-bottom: 5%;
+        text-align: center;
+    }
+    p{
+        text-align: left;
+    }
+    header{
+        margin-bottom: 5%;
+    }
+    section{
+        margin-bottom: 10%;
+    }
+    nav{
+        flex-direction: column;
+        margin-top: 10%;
+        align-items: center;
+    }
+    .logo{
+        width: 50%;
+        margin-bottom: 5%;
+    }
+    .links{
+        display: flex;
+        /*Spacing out the nav elements*/
+        width: 100%;
+        flex-direction: row;
+    }
+    .top-content .mainTextContain{
+        flex-direction: column;   
+        align-items: center;
+    }
+    .top-content .text-container{
+        width: 80%;
+        font-size: 1.8rem;
+        line-height: 1.2;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+    .middle-content h2{
+        text-align: center;
+    }
+    .boxes{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .middle-content .boxes div{
+        flex: 1 0 45%;
+    }
+    .bottom-content{
+        flex-direction:column;
+        align-items: center;
+        width: 100%;
+    }
+    .bottom-content .text-container{
+        width: 80%;
+        font-size: 1.8rem;
+        line-height: 1.2;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+    .bottom-content .text-container h2{
+        align-self:center;
+    }
+    footer nav{
+        margin-top: 0%;
+        justify-content: space-around;
+    }
+    /*About Page Styles 800px*/
+    .containerAboutPage{
+        width:90%;
+    }
+    .top-content .topText{
+        width:80%;
+        margin-bottom: 10%;
+    }
+    .top-content .topText h1{
+        text-align: center;
+    }
+    .middleContent .row{
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+    .middleContent .row .middleContainer{
+        width: 100%;
+        margin-bottom: 10%;
+    }
+    .middleContent .row .middleContainer h1{
+        text-align: center;
+    }
+    .middleContent .bottomContainer{
+        width:100%;
+        align-items: center;
+        justify-content: center;
+    }
+}
+/* @media(max-width:800){} <--looks ok at this size without query*/
+@media (min-width: 2000px){/* For readability at higher resolutions*/
+    h1,h2,h3{
+        font-size:3vh;
+    }
+    a,p{
+        font-size:2vh;
+    }
+}
